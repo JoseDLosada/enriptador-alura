@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/style.css">
+    
+    <title>Encriptador de Texto</title>
+</head>
+<body>
+    <header>
+        <div class="logo-alura">
+            <img class="logo-alura-img" src="./img/Logo.svg" alt="logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-div">
+            <section id="inputSection" class="input-section">
+                <textarea id="textInput" class="text-input" cols="30" rows="10" placeholder="Ingrese texto aquí"></textarea>
+                <div class="input-footer">
+                    <img src="img/alerta.svg" alt="alert image">
+                    <h6>Solo letras minúsculas sin acentos</h6>
+                    <div class="input-buttons">
+                        <button id="btnEncrypt" class="btn-encrypt">Encriptar</button>
+                        <button id="btnDecrypt" class="btn-decrypt">Desencriptar</button>
+                    </div>
+                </div>
+                
+            </section>
+    
+            <section id="outputSection" class="output-section">
+                <img id="outputToy" class="output-toy" src="img/Muñeco.svg" alt="Toy image">
+                <textarea id="finalMessage" class="final-message" placeholder="Ningún mensaje fue encontrado" readonly = "readonly"></textarea>
+                <p id="outputInfo" class="output-info">Ingresa el texto que desee Encriptar o Desencriptar</p>
+                <button id="btnCopy" class="btn-copy hide">Copiar</button>
+                <!-- Para dar mas de una clase se da espacio -->
+            </section>
+        </div>
+    </main>
+    <!-- <footer></footer> -->
+    <script defer src="js/script.js"></script>
+</body>
+</html>

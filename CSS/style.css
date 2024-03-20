@@ -1,0 +1,194 @@
+/* General */
+:root{
+    /* To assigne Variable */
+    --color-blue: #0A3871;
+
+}
+* {
+    background: #F3F5FC;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+  }
+/*Header Develoment*/
+/* header{
+    background-color: antiquewhite;
+} */
+.logo-alura{
+    /* background-color: aqua; */
+    width: 90%;
+    margin: auto;
+}
+.logo-alura-img{
+    margin-top: 40px;
+}
+
+/* Main Development */
+.main-div{
+    /* background-color: blueviolet; */
+    width: 80.5%;
+    margin: auto 40px auto auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    min-height: calc(100vh - 91px - 72px);
+    align-items: end;
+}
+/* input section left side */
+.input-section{
+    /* background-color: gold; */
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-input{
+    width: 80%;
+    color: var(--color-blue);
+    resize: none;
+    background: none;
+    border:none;
+    outline: none;
+    text-transform: lowercase;
+    
+}
+.text-input::placeholder{
+    color: var(--color-blue);
+}
+
+/* .input-footer{
+    background-color: chocolate; 
+} */
+h6{
+    display: inline-block;
+    font-size: 12px;
+    color: #495057;
+}
+.input-buttons{
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+
+.btn-encrypt,.btn-decrypt,.btn-copy{
+    max-width: 328px;
+    width: 40%;
+    height: 67px;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    cursor: pointer;
+}
+
+.btn-encrypt{
+    background-color: var(--color-blue);
+    color: #D8DFE8;
+}
+.btn-decrypt{
+    background-color:#D8DFE8;
+    color: var(--color-blue);
+}
+
+
+/* output section rigth side */
+.output-section{
+    background-color: white;
+    height: calc(100% + 48px);
+    border-radius: 32px;
+    padding: 32px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+    align-items: center;
+    box-shadow: 0px 24px 32px -8px var(--color-blue);
+}
+.output-section.adjust{
+    /* ajustar cuando presente el mesaje de salida "ocualtar, adjust"*/
+    justify-content: space-between;
+}
+
+.output-toy{
+    width: 100%;
+    background: none;
+}
+.hide{
+    display: none;
+}
+.final-message{
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    text-align: center;
+    background: none;
+}
+.final-message::placeholder{
+    color: #495057;
+}
+
+.final-message.adjust{
+    height: 80%;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: left;
+    color: #495057;
+}
+
+.output-info{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: #495057;
+    background: none;
+}
+
+.btn-copy{
+    width: 100%;
+    background-color: transparent;
+    color: var(--color-blue);
+}
+
+/* footer{
+    height: 50px;
+    background-color: burlywood;
+} */
+@media screen and (max-width: 800px) {
+    .main-div{
+        grid-template-columns: 1fr;
+        grid-template-rows: 75% auto;
+        width: auto;
+        margin: auto 40px;
+    }
+    .input-buttons{
+        justify-content: center;
+    }
+    .btn-decrypt,.btn-encrypt{
+        width: 45%;
+    }   
+    .output-section{
+        height: 100%;
+    }
+    .output-toy{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .main-div{
+        margin: auto 16px
+    }
+    .btn-decrypt,.btn-encrypt{
+        max-width: none;
+        width: 100%;
+    }   
+
+}
